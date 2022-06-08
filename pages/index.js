@@ -1,9 +1,38 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 
 import logo from '../public/logo.svg';
 
 export default function Home() {
+  const [inputValue, setInputValue] = useState('');
+  const [inputError, setInputError] = useState(false);
+  const [formError, setFormError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [formLoading, setFormLoading] = useState(false);
+  const [formSent, setFormSent] = useState(false);
+
+  const handleInputChange = e => {
+    const { value } = e.target;
+    setInputValue(value);
+  };
+
+  const handleSubmitClick = () => {
+    const formValid = inputValue !== '';
+    setFormError(!formValid);
+
+    if (!formValid) return;
+
+    setFormLoading(true);
+    setFormError(false);
+
+    setTimeout(() => {
+      setFormLoading(false);
+      setInputValue('');
+      setFormSent(true);
+    }, 1000);
+  };
+
   return (
     <div>
       <Head>
@@ -35,28 +64,48 @@ export default function Home() {
               and Ethereum ecosystems.
             </p>
 
-            <p className="text-lead text-bold mt-5 mt-lg-5">Get notified when we launch</p>
-
-            <div className="mt-4">
-              <div className="position-relative">
-                <input type="text" className="form-control with-button" />
-                <button className="btn btn-primary btn-absolute">Subscribe</button>
+            {formSent ? (
+              <div className="alert alert-success mt-5 mt-lg-5" role="alert">
+                <strong>Holy guacamole!</strong> Thanks for your interest!.
               </div>
+            ) : (
+              <>
+                <p className="text-lead text-bold mt-5 mt-lg-5">Get notified when we launch</p>
 
-              <div className="d-flex mt-6 mt-lg-15">
-                <a href="#" className="icon-social is-twitter"></a>
-                <a href="#" className="icon-social is-telegram ms-4"></a>
-              </div>
+                <div className="mt-4">
+                  <div className="position-relative">
+                    <input
+                      onChange={handleInputChange}
+                      value={inputValue}
+                      type="text"
+                      className={`form-control with-button ${formError ? 'is-invalid' : null}`}
+                      placeholder="examplemail@mail.com"
+                    />
+                    <button
+                      disabled={formLoading}
+                      onClick={handleSubmitClick}
+                      className="btn btn-primary btn-absolute"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </>
+            )}
 
-              <div className="text-small mt-6 mt-lg-15">
-                <a href="#" className="link">
-                  Terms of use
-                </a>
-                <span className="mx-2">|</span>
-                <a href="#" className="link">
-                  Privacy Policy
-                </a>
-              </div>
+            <div className="d-flex mt-6 mt-lg-15">
+              <a href="#" className="icon-social is-twitter"></a>
+              <a href="#" className="icon-social is-telegram ms-4"></a>
+            </div>
+
+            <div className="text-small mt-6 mt-lg-15">
+              <a href="#" className="link">
+                Terms of use
+              </a>
+              <span className="mx-2">|</span>
+              <a href="#" className="link">
+                Privacy Policy
+              </a>
             </div>
           </div>
         </div>
