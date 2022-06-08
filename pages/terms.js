@@ -1,8 +1,6 @@
-import { useState } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 
-import logo from '../public/logo.svg';
+import LogoLink from '../components/Logo';
 
 export default function Terms() {
   return (
@@ -19,13 +17,10 @@ export default function Terms() {
       </Head>
 
       <div className="container py-5 py-lg-6">
-        <a href="/">
-          <Image src={logo} alt="" />
-        </a>
+        <LogoLink />
 
         <h1 className="text-hero text-bold mt-6 mt-lg-15">Terms of Use</h1>
         <p className="text-small text-bold mt-5">Last Modified: November 13, 2019</p>
-
         <div className="row mt-5 mt-lg-11">
           <div className="col-lg-5">
             <h2 className="text-title text-bold">Introduction</h2>
@@ -52,7 +47,6 @@ export default function Terms() {
             </ul>
           </div>
         </div>
-
         <div className="row mt-5 mt-lg-11">
           <div className="col-lg-5">
             <h2 className="text-title text-bold">1. Terms of Use</h2>

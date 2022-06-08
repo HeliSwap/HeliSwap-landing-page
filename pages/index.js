@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 
-import logo from '../public/logo.svg';
+import LogoLink from '../components/Logo';
 
 export default function Home() {
   const [inputValue, setInputValue] = useState('');
@@ -20,7 +19,7 @@ export default function Home() {
 
   const handleSubmitClick = () => {
     const formValid = inputValue !== '';
-    setFormError(!formValid);
+    setInputError(!formValid);
 
     if (!formValid) return;
 
@@ -48,9 +47,7 @@ export default function Home() {
       </Head>
 
       <div className="container py-5 py-lg-6">
-        <a href="/">
-          <Image src={logo} alt="" />
-        </a>
+        <LogoLink />
 
         <div className="row align-items-center mt-6 mt-lg-15">
           <div className="col-lg-6 col-xl-5 mt-6 mt-lg-0">
@@ -79,7 +76,7 @@ export default function Home() {
                       onChange={handleInputChange}
                       value={inputValue}
                       type="text"
-                      className={`form-control with-button ${formError ? 'is-invalid' : null}`}
+                      className={`form-control with-button ${inputError ? 'is-invalid' : null}`}
                       placeholder="examplemail@mail.com"
                     />
                     <button
