@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import logo from '../public/logo.svg';
 
@@ -47,7 +48,7 @@ export default function Home() {
       </Head>
 
       <div className="container py-5 py-lg-6">
-        <a href="#">
+        <a href="/">
           <Image src={logo} alt="" />
         </a>
 
@@ -99,9 +100,9 @@ export default function Home() {
             </div>
 
             <div className="text-small mt-6 mt-lg-15">
-              <a href="#" className="link">
-                Terms of use
-              </a>
+              <Link href="terms">
+                <a className="link">Terms of use</a>
+              </Link>
               <span className="mx-2">|</span>
               <a href="#" className="link">
                 Privacy Policy
