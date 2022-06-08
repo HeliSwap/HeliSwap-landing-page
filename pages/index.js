@@ -18,13 +18,13 @@ export default function Home() {
       </Head>
 
       <div className="container py-5 py-lg-6">
-        <div className="row">
-          <div className="col-lg-6">
-            <a href="#">
-              <Image src={logo} alt="" />
-            </a>
+        <a href="#">
+          <Image src={logo} alt="" />
+        </a>
 
-            <h1 className="text-hero mt-6 mt-lg-15">
+        <div className="row align-items-center mt-6 mt-lg-15">
+          <div className="col-lg-6 col-xl-5 mt-6 mt-lg-0">
+            <h1 className="text-hero ">
               Get Ready
               <br />
               for <span className="text-bold"> Heliswap!</span>
