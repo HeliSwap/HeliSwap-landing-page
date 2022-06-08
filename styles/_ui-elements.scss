@@ -1,0 +1,35 @@
+.btn-absolute {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.form-control {
+  &.with-button {
+    padding-right: 150px;
+  }
+}
+
+.icon-social {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  padding: 8px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgba(241, 241, 241, 0.1);
+  border-radius: 4px;
+
+  &.is-twitter {
+    background-image: url('../public/icons/icon-twitter.svg');
+  }
+
+  &.is-discord {
+    background-image: url('../public/icons/icon-discord.svg');
+  }
+
+  &.is-telegram {
+    background-image: url('../public/icons/icon-telegram.svg');
+  }
+}

@@ -1,0 +1,272 @@
+// Colors
+$dark: #2c3243;
+$darker: #1c2230;
+$darkest: #030617;
+$white: #F6F6F6;
+
+$slate: #8388BA;
+$grey: #858c9a;
+$steel: #c8ccd4;
+$pale: #eceff2;
+$snow: #f9fbfd;
+
+$primary: #2D46FC;
+$secondary: $grey;
+$success: #23C581;
+$danger: #e24358;
+$warning:#ffb75d;
+$info: #501AC7;
+$light: $grey;
+
+// Add custom colors to theme-colors map
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'slate': $slate,
+  'grey': $grey,
+  'steel': $steel,
+  'pale': $pale,
+  'snow': $snow,
+  'white': $white,
+);
+
+// Options
+$enable-validation-icons: false;
+
+// Spacers
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: (
+    $spacer * 0.125,
+  ),
+  // 2px
+  2:
+    (
+      $spacer * 0.25,
+    ),
+  // 4px
+  3:
+    (
+      $spacer * 0.5,
+    ),
+  // 8px
+  4: $spacer,
+  // 16px
+  5:
+    (
+      $spacer * 1.5,
+    ),
+  // 24px
+  6:
+    (
+      $spacer * 2,
+    ),
+  // 32px
+  7:
+    (
+      $spacer * 2.5,
+    ),
+  // 40px
+  8:
+    (
+      $spacer * 3,
+    ),
+  // 48px
+  9:
+    (
+      $spacer * 3.5,
+    ),
+  // 56px
+  10:
+    (
+      $spacer * 4,
+    ),
+  // 64px
+  11:
+    (
+      $spacer * 4.5,
+    ),
+  // 72px
+  12:
+    (
+      $spacer * 5,
+    ),
+  // 80px
+  13:
+    (
+      $spacer * 5.5,
+    ),
+  // 88px
+  14:
+    (
+      $spacer * 6,
+    ),
+  // 96px
+  15:
+    (
+      $spacer * 6.5,
+    ),
+  // 104px
+  // 16: ($spacer * 7),    // 112px
+  // 17: ($spacer * 7.5),  // 120px
+  // 18: ($spacer * 8),    // 128px
+  // 19: ($spacer * 8.5),  // 136px
+  // 20: ($spacer * 9),    // 144px
+  // 21: ($spacer * 9.5),  // 162px
+  // 22: ($spacer * 10),   // 160px
+  // 23: ($spacer * 10.5), // 168px
+  // 24: ($spacer * 11),   // 176px
+  // 25: ($spacer * 11.5), // 184px
+  // 26: ($spacer * 12),   // 192px
+  // 27: ($spacer * 12.5), // 200px
+  // 28: ($spacer * 13),   // 208px
+  // 29: ($spacer * 13.5), // 216px
+  // 30: ($spacer * 14)    // 224px,
+);
+
+// Body
+$body-bg: $darkest;
+$body-color: $white;
+
+// Paragraphs
+$paragraph-margin-bottom: 0;
+
+// Grid columns
+$grid-gutter-width: 24px;
+
+// Border radius
+$border-radius: 4px;
+
+// Typography
+$font-family-primary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue',
+  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+$font-family-base: $font-family-primary;
+$font-size-base: 1rem;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semi-bold: 500;
+$font-weight-bold: 700;
+$font-weight-bolder: $font-weight-bold;
+
+$font-weight-base: $font-weight-light;
+
+$line-height-base: 1.5;
+
+$headings-margin-bottom: 0;
+$headings-font-family: $font-family-primary;
+$headings-font-weight: $font-weight-normal;
+
+$texts: (
+  hero: (
+    default: (
+      font-size: 48px,
+      line-height: 60px,
+    ),
+    md: (
+      font-size: 64px,
+      line-height: 86px,
+    ),
+  ),
+  title: (
+    default: (
+      font-size: 32px,
+      line-height: 48px,
+    ),
+    md: (
+      font-size: 32px,
+      line-height: 48px,
+    ),
+  ),
+  lead: (
+    default: (
+      font-size: 20px,
+      line-height: 30px,
+    ),
+    md: (
+      font-size: 20px,
+      line-height: 40px,
+    ),
+  ),
+  main: (
+    default: (
+      font-size: 16px,
+      line-height: 24px,
+    ),
+    md: (
+      font-size: 16px,
+      line-height: 24px,
+    ),
+  ),
+  small: (
+    default: (
+      font-size: 12px,
+      line-height: 18px,
+    ),
+    md: (
+      font-size: 12px,
+      line-height: 18px,
+    ),
+  ),
+  micro: (
+    default: (
+      font-size: 12px,
+      line-height: 1.45,
+    ),
+    md: (
+      font-size: 10px,
+      line-height: 2,
+    ),
+  ),
+);
+
+// Buttons
+$btn-padding-y-lg: 10px;
+$btn-padding-x-lg: 32px;
+$btn-padding-y: 12px;
+$btn-padding-x: 30px;
+$btn-padding-y-sm: 6px;
+$btn-padding-x-sm: 16px;
+$btn-line-height: 24px;
+$btn-font-weight: 500;
+$btn-font-size: 16px;
+$btn-border-radius: 4px;
+$btn-transition: color 0.15s linear, background-color 0.15s linear, border-color 0.15s linear,
+  box-shadow 0.15s linear;
+$btn-disabled-opacity: 0.5;
+
+$btn-primary-color: $white;
+
+// Forms
+$input-color: #7F89A7;
+$input-border-color:rgba(255, 255, 255, 0.2);
+$input-focus-border-color: #E541EE;
+$input-focus-box-shadow: 0 0 0 1px #E541EE;
+$input-height: auto;
+$input-line-height: 1.5;
+$input-placeholder-color: #9598B1;
+$form-group-margin-bottom: 0;
+$input-bg: $white;
+$input-padding-y: 16px;
+$input-padding-x: 18px;
+$input-font-size: 16px;
+
+$form-select-indicator: none;
+
+// Custom selects
+$custom-select-line-height: 1.5;
+$custom-select-height: auto;
+$custom-select-focus-box-shadow: 0 0 0 1px $primary;
+
+// Modals
+$modal-content-bg: $darker;
+$modal-header-border-color: $dark;
+
+$btn-close-color: $white;
