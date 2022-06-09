@@ -25,14 +25,17 @@
 
 // Links
 .link {
-  @include custom-underline($white);
-
   color: $white;
   text-decoration: none;
+  transition: color 0.15s linear;
 
   &:hover {
-    color: $white;
+    color: #f62ed6;
     text-decoration: none;
+  }
+
+  &.is-active {
+    border-bottom: 1px solid #f62ed6;
   }
 }
 

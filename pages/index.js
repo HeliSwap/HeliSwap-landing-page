@@ -101,9 +101,9 @@ export default function Home() {
                 <a className="link">Terms of use</a>
               </Link>
               <span className="mx-2">|</span>
-              <a href="#" className="link">
-                Privacy Policy
-              </a>
+              <Link href="privacy">
+                <a className="link">Privacy Policy</a>
+              </Link>
             </div>
           </div>
         </div>

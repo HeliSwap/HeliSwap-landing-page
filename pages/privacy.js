@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Header from '../components/Header';
 
-export default function Terms() {
+export default function Privacy() {
   return (
     <div>
       <Head>
@@ -16,9 +16,9 @@ export default function Terms() {
       </Head>
 
       <div className="container py-5 py-lg-6">
-        <Header pageTitle="Legal" />
+        <Header pageTitle="Privacy" />
 
-        <h1 className="text-hero text-bold mt-6 mt-lg-15">Terms of Use</h1>
+        <h1 className="text-hero text-bold mt-6 mt-lg-15">Privacy</h1>
         <p className="text-small text-bold mt-5">Last Modified: November 13, 2019</p>
         <div className="row mt-5 mt-lg-11">
           <div className="col-lg-5">

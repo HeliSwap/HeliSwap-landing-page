@@ -33,3 +33,11 @@
     background-image: url('../public/icons/icon-telegram.svg');
   }
 }
+
+.container-header-page-title {
+  height: 44px;
+  border-left: 1px solid $white;
+  padding-left: 32px;
+  margin-left: 32px;
+  line-height: 44px;
+}
