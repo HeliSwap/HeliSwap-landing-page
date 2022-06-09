@@ -59,13 +59,13 @@ export default function Home() {
               </h1>
 
               <p className="text-main text-slate mt-5 mt-lg-5">
-                The first DEX for the Hedera ecosystem supporting cross-chain swaps between the
-                Hedera and Ethereum ecosystems.
+                The first DEX on the Hedera network supporting swaps between HTS, ERC20s and HBAR.
+                Completely trustless and permissionless. Built on the Hedera Smart Contract Service.
               </p>
 
               {formSent ? (
                 <div className="alert alert-success mt-5 mt-lg-5" role="alert">
-                  <strong>Holy guacamole!</strong> Thanks for your interest!.
+                  <strong>Thanks for your interest!</strong> We are going to keep in touch with you.
                 </div>
               ) : (
                 <>
