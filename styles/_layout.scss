@@ -14,12 +14,13 @@ body {
   background-image: url('../public/bg-body-01.svg'), url('../public/bg-body-02.svg');
   background-repeat: no-repeat, no-repeat;
   background-position: 0 100%, 100% 100%;
+}
 
+.container-homepage-wrapper {
   @include media-breakpoint-up(lg) {
-    background-image: url('../public/bg-body-01.svg'), url('../public/bg-body-02.svg'),
-      url('../public/logo-glass.png');
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 0 100%, 100% 100%, 111% 30%;
+    background-image: url('../public/logo-glass.png');
+    background-position: 111% 30%;
+    background-repeat: no-repeat;
   }
 }
 
