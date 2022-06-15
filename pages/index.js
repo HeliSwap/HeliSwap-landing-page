@@ -87,18 +87,28 @@ export default function Home() {
               )}
 
               <div className="d-flex mt-6 mt-lg-15">
-                <a href="#" className="icon-social is-twitter"></a>
-                <a href="#" className="icon-social is-telegram ms-4"></a>
+                <a
+                  href="https://twitter.com/heliswap_dex"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-social is-twitter"
+                ></a>
+                <a
+                  href="https://t.me/heliswap"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-social is-telegram ms-4"
+                ></a>
               </div>
 
               <div className="text-small mt-6 mt-lg-15">
                 <Link href="terms">
                   <a className="link">Terms of use</a>
                 </Link>
-                <span className="mx-2">|</span>
+                {/* <span className="mx-2">|</span>
                 <Link href="privacy">
                   <a className="link">Privacy Policy</a>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

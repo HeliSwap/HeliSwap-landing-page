@@ -10,10 +10,10 @@ export default function Menu() {
       title: 'Terms of use',
       url: '/terms',
     },
-    {
-      title: 'Privacy Policy',
-      url: '/privacy',
-    },
+    // {
+    //   title: 'Privacy Policy',
+    //   url: '/privacy',
+    // },
   ];
 
   return (
