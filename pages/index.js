@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import LogoLink from '../components/Logo';
+import logo_glass from '../public/logo-glass.png';
 
 export default function Home() {
   const [inputValue, setInputValue] = useState('');
@@ -45,6 +47,10 @@ export default function Home() {
           <LogoLink />
 
           <div className="row align-items-center mt-6 mt-lg-15">
+            <div className="d-lg-none text-center">
+              <Image src={logo_glass} alt="" />
+            </div>
+
             <div className="col-lg-6 col-xl-5 mt-6 mt-lg-0">
               <h1 className="text-hero ">
                 Get Ready

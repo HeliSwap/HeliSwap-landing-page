@@ -19,7 +19,7 @@ body {
 .container-homepage-wrapper {
   @include media-breakpoint-up(lg) {
     background-image: url('../public/logo-glass.png');
-    background-position: 111% 30%;
+    background-position: 100% 30%;
     background-repeat: no-repeat;
   }
 }
