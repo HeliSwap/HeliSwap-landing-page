@@ -38,12 +38,6 @@ export default function Home() {
       <Head>
         <title>HeliSwap Landing page</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;500;700&display=swap"
-          rel="stylesheet"
-        ></link>
       </Head>
 
       <div className="container-homepage-wrapper">
