@@ -11,9 +11,7 @@ export default function Header({ pageTitle }) {
         </div>
       </div>
 
-      <div className="mt-5 mt-md-0">
-        <Menu />
-      </div>
+      <div className="mt-5 mt-md-0">{/* <Menu /> */}</div>
     </div>
   );
 }
