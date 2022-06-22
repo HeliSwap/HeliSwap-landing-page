@@ -12,14 +12,6 @@ export default function Document() {
         ></link>
       </Head>
       <body>
-        <noscript>
-          <iframe
-            src={`https://www.googletagmanager.com/gtag/js?id=G-S2NXPBLWM2`}
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
         <Main />
         <NextScript />
       </body>
