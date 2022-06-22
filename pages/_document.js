@@ -10,6 +10,12 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?&family=Poppins:wght@300;500;700&display=swap"
           rel="stylesheet"
         ></link>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-S2NXPBLWM2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-S2NXPBLWM2');
+        </script>
       </Head>
       <body>
         <Main />
