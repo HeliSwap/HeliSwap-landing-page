@@ -1,10 +1,19 @@
 import { useState } from 'react';
+import axios from 'axios';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 
 import LogoLink from '../components/Logo';
 import logo_glass from '../public/logo-glass.png';
+
+const validateEmail = email => {
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+    );
+};
 
 export default function Home() {
   const [inputValue, setInputValue] = useState('');
@@ -19,20 +28,39 @@ export default function Home() {
     setInputValue(value);
   };
 
-  const handleSubmitClick = () => {
-    const formValid = inputValue !== '';
+  const handleSubmitClick = async () => {
+    const formValid = inputValue !== '' && validateEmail(inputValue);
     setInputError(!formValid);
 
     if (!formValid) return;
 
     setFormLoading(true);
     setFormError(false);
+    setErrorMessage('');
 
-    setTimeout(() => {
+    const url = `/api/subscribe`;
+    const bodyParams = {
+      profiles: [{ email: inputValue }],
+    };
+
+    try {
+      const response = await axios.post(url, bodyParams);
+      const { status, data } = response;
+      const { statusText } = data;
+
+      if (status === 200 && statusText === 'OK') {
+        setFormSent(true);
+        setInputValue('');
+      } else {
+        setFormError(true);
+        setErrorMessage(statusText);
+      }
+    } catch (e) {
+      setFormError(true);
+      setErrorMessage(e.message);
+    } finally {
       setFormLoading(false);
-      setInputValue('');
-      setFormSent(true);
-    }, 1000);
+    }
   };
 
   return (
@@ -77,7 +105,9 @@ export default function Home() {
                         onChange={handleInputChange}
                         value={inputValue}
                         type="text"
-                        className={`form-control with-button ${inputError ? 'is-invalid' : null}`}
+                        className={`form-control with-button ${
+                          inputError || formError ? 'is-invalid' : null
+                        }`}
                         placeholder="examplemail@mail.com"
                       />
                       <button
@@ -89,6 +119,12 @@ export default function Home() {
                       </button>
                     </div>
                   </div>
+
+                  {formError ? (
+                    <div className="alert alert-danger mt-5 mt-lg-5" role="alert">
+                      <strong>Something went wrong!</strong> {errorMessage}
+                    </div>
+                  ) : null}
                 </>
               )}
 
