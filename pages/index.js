@@ -144,7 +144,7 @@ export default function Home() {
               </div>
 
               <div className="text-small mt-6 mt-lg-15">
-                <Link href="terms">
+                <Link href="/terms">
                   <a className="link">Terms of use</a>
                 </Link>
                 {/* <span className="mx-2">|</span>
