@@ -4,8 +4,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <title>HeliSwap.io</title>
-
         <meta
           name="description"
           content="First DEX on the Hedera network to support HTS, ERC20 and HBAR tokens."

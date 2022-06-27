@@ -65,6 +65,10 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+        <title>HeliSwap.io</title>
+      </Head>
+
       <div className="container-homepage-wrapper">
         <div className="container py-5 py-lg-6">
           <LogoLink />

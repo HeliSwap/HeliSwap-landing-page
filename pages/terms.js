@@ -5,8 +5,7 @@ export default function Terms() {
   return (
     <div>
       <Head>
-        <title>HeliSwap Landing page</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>HeliSwap.io | Terms</title>
       </Head>
 
       <div className="container py-5 py-lg-6">
