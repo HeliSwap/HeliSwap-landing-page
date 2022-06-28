@@ -41,3 +41,12 @@
   margin-left: 32px;
   line-height: 44px;
 }
+
+.list {
+  list-style-type: disc;
+  padding-left: 24px;
+
+  li {
+    margin-top: 24px;
+  }
+}

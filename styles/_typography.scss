@@ -39,6 +39,17 @@
   }
 }
 
+.link-pink {
+  color: #f62ed6;
+  text-decoration: none;
+  transition: color 0.15s linear;
+
+  &:hover {
+    color: #f62ed6;
+    text-decoration: underline;
+  }
+}
+
 .link-primary {
   @include custom-underline($primary);
   cursor: pointer;
