@@ -87,7 +87,7 @@ export default function Home() {
               <h1 className="text-hero ">
                 Get Ready
                 <br />
-                for <span className="text-bold"> Heliswap!</span>
+                for <span className="text-bold"> HeliSwap!</span>
               </h1>
 
               <p className="text-main mt-5 mt-lg-5">
