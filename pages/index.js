@@ -107,7 +107,7 @@ export default function Home() {
 
           <div className="row align-items-center mt-10 mt-xl-20">
             <div className="offset-lg-1 col-lg-5 text-center">
-              <Image src={lightning} />
+              <Image src={lightning} alt="" />
             </div>
 
             <div className="col-lg-5 mt-6 mt-lg-0">
@@ -122,7 +122,7 @@ export default function Home() {
 
           <div className="row align-items-center mt-10 mt-xl-20">
             <div className="col-lg-5 text-center order-lg-2">
-              <Image src={consensus} />
+              <Image src={consensus} alt="" />
             </div>
 
             <div className="offset-lg-1 col-lg-5 order-lg-1 mt-6 mt-lg-0">
@@ -139,7 +139,7 @@ export default function Home() {
 
           <div className="row align-items-center mt-10 mt-xl-20">
             <div className="offset-lg-1 col-lg-5 text-center">
-              <Image src={users} />
+              <Image src={users} alt="" />
             </div>
 
             <div className="col-lg-5 mt-6 mt-lg-0">

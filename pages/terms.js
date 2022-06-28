@@ -70,7 +70,7 @@ export default function Terms() {
             </p>
 
             <p className="text-main mt-5">
-              You further represent that you are not (a) the subject of economic or trade sanc>ons
+              You further represent that you are not (a) the subject of economic or trade sanctions
               administered or enforced by any governmental authority or otherwise designated on any
               list of prohibited or restricted parties (including but not limited to the list
               maintained by the Office of Foreign Assets Control of the U.S. Department of the
