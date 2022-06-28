@@ -8,8 +8,6 @@ export default function Document() {
           name="description"
           content="First DEX on the Hedera network to support HTS, ERC20 and HBAR tokens."
         ></meta>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-
         <meta property="og:url" content="https://www.heliswap.io/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="heliswap.io" />

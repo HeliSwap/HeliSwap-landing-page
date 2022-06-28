@@ -117,7 +117,7 @@ $spacers: (
   // 17: ($spacer * 7.5),  // 120px
   // 18: ($spacer * 8),    // 128px
   // 19: ($spacer * 8.5),  // 136px
-  // 20: ($spacer * 9),    // 144px
+  20: ($spacer * 9),    // 144px
   // 21: ($spacer * 9.5),  // 162px
   // 22: ($spacer * 10),   // 160px
   // 23: ($spacer * 10.5), // 168px
@@ -127,7 +127,9 @@ $spacers: (
   // 27: ($spacer * 12.5), // 200px
   // 28: ($spacer * 13),   // 208px
   // 29: ($spacer * 13.5), // 216px
-  // 30: ($spacer * 14)    // 224px,
+  30: ($spacer * 14),    // 224px,
+  35: ($spacer * 22),    // 224px,
+  40: ($spacer * 28)    // 224px,
 );
 
 // Body
