@@ -94,8 +94,8 @@ export default function Terms() {
               We reserve the right, in our sole discretion, to modify this Agreement from time to
               time. If we make any modifications, we will notify you by updating the date at the top
               of the Agreement and by maintaining a current version of the agreement at{' '}
-              <a href="https://heliswap.com/terms" className="link-pink">
-                https://heliswap.com/terms
+              <a href="https://heliswap.io/terms" className="link-pink">
+                https://heliswap.io/terms
               </a>
               . All modifications will be effective when they are posted, andX your continued
               accessing or use of the Site will serve as confirmation of your acceptance of those
