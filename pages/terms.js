@@ -20,19 +20,20 @@ export default function Terms() {
 
           <div className="col-lg-7 mt-5 mt-lg-0">
             <p className="text-main">
-              Welcome to HeliSwap, a website-hosted user interface (the "Site") that we provide to
-              allow our users to access the various products, services and information that comprise
-              HeliSwap. Through this interface, we provide decentralized financial services and
-              develop applications that connect people to digital assets and DeFi services.
+              Welcome to HeliSwap, a website-hosted user interface (the &quot;Site&quot;) that we
+              provide to allow our users to access the various products, services and information
+              that comprise HeliSwap. Through this interface, we provide decentralized financial
+              services and develop applications that connect people to digital assets and DeFi
+              services.
             </p>
 
             <p className="text-main mt-5">
-              These paragraphs constitute a "Terms of Service Agreement" (the "Agreement") between
-              you and HeliSwap. This Agreement explains the terms and conditions by which you may
-              access and use the Site. You must read this Agreement carefully. By accessing or using
-              the Site, you signify that you have read, understand, and agree to be bound by this
-              Agreement in its entirety. If you do not agree, you are not authorized to access or
-              use the Site and should not use the Site.
+              These paragraphs constitute a &quot;Terms of Service Agreement&quot; (the
+              &quot;Agreement&quot;) between you and HeliSwap. This Agreement explains the terms and
+              conditions by which you may access and use the Site. You must read this Agreement
+              carefully. By accessing or using the Site, you signify that you have read, understand,
+              and agree to be bound by this Agreement in its entirety. If you do not agree, you are
+              not authorized to access or use the Site and should not use the Site.
             </p>
 
             <p className="text-main text-bold mt-5">
@@ -118,11 +119,11 @@ export default function Terms() {
               the Site. Except as may be expressly permitted by applicable law or expressly
               permitted by us in writing, you will not, and will not permit anyone else to: (a)
               store, copy, modify, distribute, or resell any information or material available on
-              the Site ("Site Content") or compile or collect any Site Content as part of a database
-              or other work; (b) use any automated tool (e.g., robots, spiders) to use the Site or
-              store, copy, modify, distribute, or resell any Site Content; (c) rent, lease, or
-              sublicense your access to the Site; (d) use the Site or Site Content for any purpose
-              except for your own personal use; (e) circumvent or disable any digital rights
+              the Site (&quot;Site Content&quot;) or compile or collect any Site Content as part of
+              a database or other work; (b) use any automated tool (e.g., robots, spiders) to use
+              the Site or store, copy, modify, distribute, or resell any Site Content; (c) rent,
+              lease, or sublicense your access to the Site; (d) use the Site or Site Content for any
+              purpose except for your own personal use; (e) circumvent or disable any digital rights
               management, usage rules, or other security features of the Site; (f) reproduce,
               modify, translate, enhance, decompile, disassemble, reverse engineer, or create
               derivative works of the Site; (g) use the Site in a manner that threatens the
@@ -174,7 +175,7 @@ export default function Terms() {
               </a>
               , to learn more about how these sites use data. Each site that we use may have its own
               unique policies. By accessing and using the Site, you understand and consent to our
-              data practices and our service providers' treatment of your information.
+              data practices and our service providers&apos; treatment of your information.
             </p>
 
             <p className="text-main mt-5">
@@ -302,17 +303,18 @@ export default function Terms() {
 
           <div className="col-lg-7 mt-5 mt-lg-0">
             <p className="text-main">
-              The Site is provided on an "AS IS" and "AS AVAILABLE" basis. To the fullest extent
-              permitted by law, we disclaim any representations and warranties of any kind, whether
-              express, implied, or statutory, including (but not limited to) the warranties of
-              merchantability and fitness for a particular purpose. You acknowledge and agree that
-              your use of the Site is at your own risk. We do not represent or warrant that access
-              to the Site will be continuous, uninterrupted, timely, or secure; that the information
-              contained in the Site will be accurate, reliable, complete, or current; or that the
-              Site will be free from errors, defects, viruses, or other harmful elements. No advice,
-              information, or statement that we make should be treated as creating any warranty
-              concerning the Site. We do not endorse, guarantee, or assume responsibility for any
-              advertisements, offers, or statements made by third parties concerning the Site.
+              The Site is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. To
+              the fullest extent permitted by law, we disclaim any representations and warranties of
+              any kind, whether express, implied, or statutory, including (but not limited to) the
+              warranties of merchantability and fitness for a particular purpose. You acknowledge
+              and agree that your use of the Site is at your own risk. We do not represent or
+              warrant that access to the Site will be continuous, uninterrupted, timely, or secure;
+              that the information contained in the Site will be accurate, reliable, complete, or
+              current; or that the Site will be free from errors, defects, viruses, or other harmful
+              elements. No advice, information, or statement that we make should be treated as
+              creating any warranty concerning the Site. We do not endorse, guarantee, or assume
+              responsibility for any advertisements, offers, or statements made by third parties
+              concerning the Site.
             </p>
 
             <p className="text-main mt-5">
@@ -475,8 +477,8 @@ export default function Terms() {
               against all claims, damages, obligations, losses, liabilities, costs, and expenses
               arising from: (a) your access and use of the Site; (b) your violation of any term or
               condition of this Agreement, the right of any third party, or any other applicable
-              law, rule, or regulation; and (c) any other party's access and use of the Site with
-              your assistance or using any device or account that you own or control.
+              law, rule, or regulation; and (c) any other party&apos;s access and use of the Site
+              with your assistance or using any device or account that you own or control.
             </p>
           </div>
         </div>
@@ -570,9 +572,9 @@ export default function Terms() {
                 contact@heliswap.io
               </a>{' '}
               so that we can attempt to resolve it without resorting to formal dispute resolution.
-              If we aren't able to reach an informal resolution within sixty days of your email,
-              then you and we both agree to resolve the potential dispute according to the process
-              set forth below.
+              If we aren&apos;t able to reach an informal resolution within sixty days of your
+              email, then you and we both agree to resolve the potential dispute according to the
+              process set forth below.
             </p>
 
             <p className="text-main mt-5">
@@ -587,7 +589,7 @@ export default function Terms() {
             </p>
 
             <p className="text-main mt-5">
-              The tribunal shall consist of three arbitrators. The place and seat of the arbitra>on
+              The tribunal shall consist of three arbitrators. The place and seat of the arbitration
               shall be Singapore. The language to be used in the arbitration proceedings will be
               English. The decision of the arbitrators will be final, binding and enforceable
               against you and us, and a judgment upon any award rendered by the arbitrators may be
