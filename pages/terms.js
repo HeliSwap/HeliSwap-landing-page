@@ -20,14 +20,14 @@ export default function Terms() {
 
           <div className="col-lg-7 mt-5 mt-lg-0">
             <p className="text-main">
-              Welcome to HeliSwap, a website-hosted user interface (the “Site") that we provide to
+              Welcome to HeliSwap, a website-hosted user interface (the "Site") that we provide to
               allow our users to access the various products, services and information that comprise
               HeliSwap. Through this interface, we provide decentralized financial services and
               develop applications that connect people to digital assets and DeFi services.
             </p>
 
             <p className="text-main mt-5">
-              These paragraphs constitute a “Terms of Service Agreement” (the "Agreement") between
+              These paragraphs constitute a "Terms of Service Agreement" (the "Agreement") between
               you and HeliSwap. This Agreement explains the terms and conditions by which you may
               access and use the Site. You must read this Agreement carefully. By accessing or using
               the Site, you signify that you have read, understand, and agree to be bound by this
@@ -118,7 +118,7 @@ export default function Terms() {
               the Site. Except as may be expressly permitted by applicable law or expressly
               permitted by us in writing, you will not, and will not permit anyone else to: (a)
               store, copy, modify, distribute, or resell any information or material available on
-              the Site (“Site Content”) or compile or collect any Site Content as part of a database
+              the Site ("Site Content") or compile or collect any Site Content as part of a database
               or other work; (b) use any automated tool (e.g., robots, spiders) to use the Site or
               store, copy, modify, distribute, or resell any Site Content; (c) rent, lease, or
               sublicense your access to the Site; (d) use the Site or Site Content for any purpose
@@ -588,11 +588,11 @@ export default function Terms() {
 
             <p className="text-main mt-5">
               The tribunal shall consist of three arbitrators. The place and seat of the arbitra>on
-              shall be Singapore. The language to be used in the arbitra>on proceedings will be
+              shall be Singapore. The language to be used in the arbitration proceedings will be
               English. The decision of the arbitrators will be final, binding and enforceable
               against you and us, and a judgment upon any award rendered by the arbitrators may be
-              entered in any court having jurisdic>on. In no event will the arbitrators have the
-              authority to make any award that provides for puni>ve or exemplary damages.
+              entered in any court having jurisdiction. In no event will the arbitrators have the
+              authority to make any award that provides for punitive or exemplary damages.
             </p>
           </div>
         </div>
