@@ -22,6 +22,7 @@ const validateEmail = email => {
 export default function Home() {
   const [inputValue, setInputValue] = useState('');
   const [inputError, setInputError] = useState(false);
+  const [inputErrorMessage, setInputErrorMessage] = useState('');
   const [formError, setFormError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [formLoading, setFormLoading] = useState(false);
@@ -35,6 +36,7 @@ export default function Home() {
   const handleSubmitClick = async () => {
     const formValid = inputValue !== '' && validateEmail(inputValue);
     setInputError(!formValid);
+    setInputErrorMessage('Invalid text in input');
 
     if (!formValid) return;
 
@@ -160,7 +162,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div id="subscribe" className="text-center mt-10 mt-xl-20">
+          <div id="subscribe" className="mt-10 mt-xl-20">
             <div className="row">
               <div className="offset-lg-3 col-lg-6">
                 {formSent ? (
@@ -170,7 +172,9 @@ export default function Home() {
                   </div>
                 ) : (
                   <>
-                    <p className="text-lead text-bold mt-5 mt-lg-5">Get notified when we launch</p>
+                    <p className="text-lead text-center text-bold mt-5 mt-lg-5">
+                      Get notified when we launch
+                    </p>
 
                     <div className="mt-4">
                       <div className="position-relative">
@@ -183,6 +187,9 @@ export default function Home() {
                           }`}
                           placeholder="examplemail@mail.com"
                         />
+                        {inputError && inputErrorMessage ? (
+                          <div class="invalid-feedback">{inputErrorMessage}</div>
+                        ) : null}
                         <button
                           disabled={formLoading}
                           onClick={handleSubmitClick}
