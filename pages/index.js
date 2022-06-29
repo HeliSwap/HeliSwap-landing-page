@@ -154,6 +154,12 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="pt-10 mt-xl-20">
+            <h2 className="text-mega text-bold text-center">
+              HELI Fast, HELI Green, HELI Affordable
+            </h2>
+          </div>
+
           <div id="subscribe" className="text-center mt-10 mt-xl-20">
             <div className="row">
               <div className="offset-lg-3 col-lg-6">
