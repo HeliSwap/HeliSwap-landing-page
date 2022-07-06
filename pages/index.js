@@ -188,7 +188,7 @@ export default function Home() {
                           placeholder="examplemail@mail.com"
                         />
                         {inputError && inputErrorMessage ? (
-                          <div class="invalid-feedback">{inputErrorMessage}</div>
+                          <div className="invalid-feedback">{inputErrorMessage}</div>
                         ) : null}
                         <button
                           disabled={formLoading}
