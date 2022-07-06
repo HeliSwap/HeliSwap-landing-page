@@ -117,7 +117,7 @@ export default function Home() {
               <p className="text-main mt-5">
                 With HeliSwap we are bringing in a lightning fast, affordable and already
                 battle-tested AMM to the DeFi space. HeliSwap has some of the lowest fees in the
-                industry, at around $0.01 per transaction.
+                industry.
               </p>
             </div>
           </div>
