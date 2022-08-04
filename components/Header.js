@@ -11,7 +11,20 @@ export default function Header({ pageTitle }) {
         </div>
       </div>
 
-      <div className="mt-5 mt-md-0">{/* <Menu /> */}</div>
+      <div className="d-flex justify-content-end align-items-center mt-5 mt-md-0">
+        <Menu />
+
+        <span className="separator-menu"></span>
+
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://app.heliswap.io/"
+          className="btn btn-primary btn-sm"
+        >
+          Launch app
+        </a>
+      </div>
     </div>
   );
 }

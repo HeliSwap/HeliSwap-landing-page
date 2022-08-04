@@ -4,8 +4,10 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import LogoLink from '../components/Logo';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import logo_glass from '../public/logo-glass.png';
+import logo_hbar from '../public/logo-hbar.svg';
 
 import lightning from '../public/icons/lightning.svg';
 import consensus from '../public/icons/consensus.svg';
@@ -78,7 +80,7 @@ export default function Home() {
 
       <div className="container-homepage-wrapper">
         <div className="container py-5 py-lg-6">
-          <LogoLink />
+          <Header />
 
           <div className="row align-items-center mt-6 mt-lg-15">
             <div className="d-lg-none text-center">
@@ -97,16 +99,30 @@ export default function Home() {
                 Completely trustless and permissionless. Built on the Hedera Smart Contract Service.
               </p>
 
-              <div className="mt-7">
-                <a href="#subscribe" className="btn btn-sm btn-primary">
+              <div className="d-flex align-items-center mt-7">
+                <a href="#subscribe" className="btn btn-sm btn-outline-primary">
                   Subscribe
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://app.heliswap.io/"
+                  className="btn btn-sm btn-primary ms-3"
+                >
+                  Launch app
+                </a>
+              </div>
+
+              <div className="d-flex align-items-center mt-15">
+                <p className="text-small me-3">Supported by</p>{' '}
+                <a target="_blank" rel="noreferrer" href="https://www.hbarfoundation.org/">
+                  <Image className="d-block" src={logo_hbar} alt="" />
                 </a>
               </div>
             </div>
           </div>
 
           <h2 className="text-title text-bold text-center mt-10 mt-xl-35">About HeliSwap</h2>
-
           <div className="row align-items-center mt-10 mt-xl-20">
             <div className="offset-lg-1 col-lg-5 text-center">
               <Image src={lightning} alt="" />
@@ -121,7 +137,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-
           <div className="row align-items-center mt-10 mt-xl-20">
             <div className="col-lg-5 text-center order-lg-2">
               <Image src={consensus} alt="" />
@@ -138,7 +153,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-
           <div className="row align-items-center mt-10 mt-xl-20">
             <div className="offset-lg-1 col-lg-5 text-center">
               <Image src={users} alt="" />
@@ -155,13 +169,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-
           <div className="pt-10 mt-xl-20">
             <h2 className="text-mega text-bold text-center">
               HELI Fast, HELI Green, HELI Affordable
             </h2>
           </div>
-
           <div id="subscribe" className="mt-10 mt-xl-20">
             <div className="row">
               <div className="offset-lg-3 col-lg-6">
@@ -211,34 +223,7 @@ export default function Home() {
             </div>
           </div>
 
-          <hr className="my-6 mt-lg-15" />
-
-          <div className="d-flex justify-content-between align-items-center">
-            <div className="d-flex">
-              <a
-                href="https://twitter.com/heliswap_dex"
-                target="_blank"
-                rel="noreferrer"
-                className="icon-social is-twitter"
-              ></a>
-              <a
-                href="https://t.me/heliswap"
-                target="_blank"
-                rel="noreferrer"
-                className="icon-social is-telegram ms-4"
-              ></a>
-            </div>
-
-            <div className="text-small">
-              <Link href="/terms">
-                <a className="link">Terms of use</a>
-              </Link>
-              {/* <span className="mx-2">|</span>
-                <Link href="privacy">
-                  <a className="link">Privacy Policy</a>
-                </Link> */}
-            </div>
-          </div>
+          <Footer />
         </div>
       </div>
     </div>
