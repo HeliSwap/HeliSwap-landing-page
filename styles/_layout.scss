@@ -24,6 +24,14 @@ body {
   }
 }
 
+.container-about-wrapper {
+  @include media-breakpoint-up(lg) {
+    background-image: url('../public/bg-about.png');
+    background-position: 100% 80px;
+    background-repeat: no-repeat;
+  }
+}
+
 ul {
   margin: 0;
   padding: 0;
