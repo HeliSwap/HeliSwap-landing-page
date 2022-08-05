@@ -19,7 +19,7 @@ export default function Footer() {
             className="icon-social is-telegram ms-4"
           ></a>
           <a
-            href="https://heliswap.gitbook.io"
+            href="https://docs.gitbook.io"
             target="_blank"
             rel="noreferrer"
             className="icon-social is-github ms-4"

@@ -13,7 +13,7 @@ export default function Menu() {
     },
     {
       title: 'Docs',
-      url: 'https://heliswap.gitbook.io/',
+      url: 'https://docs.gitbook.io/',
       isExternal: true,
     },
   ];

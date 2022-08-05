@@ -185,7 +185,7 @@ export default function Home() {
                 ) : (
                   <>
                     <p className="text-lead text-center text-bold mt-5 mt-lg-5">
-                      Get notified when we launch
+                      Subscribe to our latest news
                     </p>
 
                     <div className="mt-4">
