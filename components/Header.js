@@ -22,7 +22,7 @@ export default function Header({ pageTitle }) {
           href="https://app.heliswap.io/"
           className="btn btn-primary btn-sm"
         >
-          Launch app
+          Launch App
         </a>
       </div>
     </div>

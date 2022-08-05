@@ -108,7 +108,7 @@
   $active-border: $color,
   $active-color: color-contrast($active-background)
 ) {
-  color: $color;
+  color: $btn-primary-color;
   border-color: $color;
 
   &:hover {

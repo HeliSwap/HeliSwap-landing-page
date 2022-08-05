@@ -100,21 +100,21 @@ export default function Home() {
               </p>
 
               <div className="d-flex align-items-center mt-7">
-                <a href="#subscribe" className="btn btn-sm btn-outline-primary">
+                <a href="#subscribe" className="btn btn-outline-primary">
                   Subscribe
                 </a>
                 <a
                   target="_blank"
                   rel="noreferrer"
                   href="https://app.heliswap.io/"
-                  className="btn btn-sm btn-primary ms-3"
+                  className="btn btn-primary ms-4"
                 >
-                  Launch app
+                  Launch App
                 </a>
               </div>
 
-              <div className="d-flex align-items-center mt-15">
-                <p className="text-small me-3">Supported by</p>{' '}
+              <div className="d-flex align-items-center mt-20">
+                <p className="text-small me-3 mb-3">Supported by</p>{' '}
                 <a target="_blank" rel="noreferrer" href="https://www.hbarfoundation.org/">
                   <Image className="d-block" src={logo_hbar} alt="" />
                 </a>
