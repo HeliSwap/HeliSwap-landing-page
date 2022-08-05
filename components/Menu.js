@@ -21,7 +21,7 @@ export default function Menu() {
   return (
     <ul className="d-flex">
       {menuContent?.map((item, index) => (
-        <li className="ms-4" key={index}>
+        <li className="ms-md-4" key={index}>
           {item.isExternal ? (
             <a className="link-menu" target="_blank" rel="noreferrer" href={item.url}>
               {item.title}

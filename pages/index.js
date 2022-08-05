@@ -99,21 +99,21 @@ export default function Home() {
                 Completely trustless and permissionless. Built on the Hedera Smart Contract Service.
               </p>
 
-              <div className="d-flex align-items-center mt-7">
-                <a href="#subscribe" className="btn btn-outline-primary">
+              <div className="d-md-flex align-items-center mt-7">
+                <a href="#subscribe" className="btn btn-outline-primary d-block d-sm-inline-block">
                   Subscribe
                 </a>
                 <a
                   target="_blank"
                   rel="noreferrer"
                   href="https://app.heliswap.io/"
-                  className="btn btn-primary ms-4"
+                  className="btn btn-primary ms-sm-4 mt-3 mt-sm-0 d-block d-sm-inline-block"
                 >
                   Launch App
                 </a>
               </div>
 
-              <div className="d-flex align-items-center mt-20">
+              <div className="d-flex align-items-center mt-6 mt-md-20">
                 <p className="text-small me-3 mb-3">Supported by</p>{' '}
                 <a target="_blank" rel="noreferrer" href="https://www.hbarfoundation.org/">
                   <Image className="d-block" src={logo_hbar} alt="" />

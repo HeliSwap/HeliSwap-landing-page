@@ -3,7 +3,7 @@ import Menu from '../components/Menu';
 
 export default function Header({ pageTitle }) {
   return (
-    <div className="d-md-flex justify-content-lg-between align-items-center">
+    <div className="d-md-flex justify-content-md-between align-items-center">
       <div className="d-flex align-items-center">
         <LogoLink />
         <div className="container-header-page-title">
@@ -11,10 +11,10 @@ export default function Header({ pageTitle }) {
         </div>
       </div>
 
-      <div className="d-flex justify-content-end align-items-center mt-5 mt-md-0">
+      <div className="d-flex justify-content-between justify-content-md-end align-items-center mt-5 mt-md-0">
         <Menu />
 
-        <span className="separator-menu"></span>
+        <span className="d-none d-md-block separator-menu"></span>
 
         <a
           target="_blank"
