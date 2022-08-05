@@ -28,10 +28,10 @@ export default function About() {
               <h1 className="text-hero text-bold">About us</h1>
 
               <p className="text-main mt-5 mt-lg-5">
-                HeliSwap is developed by the team behind MANTRA and LimeChain. We are the first &
-                only DEX to ever have received the grant from the Hedera Foundation to build within
-                the Hedera ecosystem. Our devs have been one of the core contributors for Hedera on
-                the protocol level.
+                The HeliSwap team is formed by engineers and experts in the field coming from MANTRA
+                and LimeChain. We are the first DEX to receive a grant from the HBAR Foundation to
+                build within the Hedera ecosystem. Our devs have been one of the core contributors
+                for Hedera on the protocol level.
               </p>
 
               <p className="text-main text-bold mt-5 mt-lg-5">
