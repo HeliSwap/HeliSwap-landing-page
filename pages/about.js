@@ -81,15 +81,15 @@ export default function About() {
             <div className="offset-lg-1 col-lg-5 order-lg-1 mt-6 mt-lg-0">
               <h3 className="text-lead text-bold">LimeChain</h3>
               <p className="text-main mt-5">
-                Having started as a small boutique solutions company in 2017, LimeChain has since
-                become one of the top Blockchain companies in the world, a Web3 innovator counting
-                Fortune 500 companies and well-known Web3 startups and builders among its clients.
-                We are now a team of over 100 people and we are proud to say that we’ve worked on
-                150+ projects, both big and small, having amassed a wealth of Web3 know-how in the
-                process. We have a diverse portfolio of services, including dApp and DeFi
-                development, token and NFT minting, smart contract development and Web3 consulting.
-                Some of our clients include Hedera Hashgraph, Polkadot, The Graph, Universe,
-                MantraDAO, Celo, IMVU, P&G, Raiffeisen Bank, and others.
+                LimeChain has been working with both start-ups and established enterprises since
+                2017 to implement Web3 solutions and build on blockchain networks. Their diverse
+                portfolio includes dApp and DeFi development, token and NFT minting, smart contract
+                development and Web3 consulting. The blockchain development teams have worked on
+                over 150 projects and partnered with notable Web3 players like Hedera Hashgraph and
+                Polkadot. The company has a team of Hedera core developers that have the HTS
+                Service, Scheduled Transactions, Worked on the Hedera Smart Contract Service and
+                introduced the HTS Precompile enabling developers to interact with HTS through smart
+                contracts.
               </p>
 
               <div className="mt-5 mt-lg-7">
