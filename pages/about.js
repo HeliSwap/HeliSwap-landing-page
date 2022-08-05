@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import bg_about from '../public/bg-about.png';
+import logo_mantra from '../public/logo-mantra.svg';
+import logo_limechain from '../public/logo-limechain.svg';
 
 export default function About() {
   return (
@@ -39,13 +41,16 @@ export default function About() {
             </div>
           </div>
 
-          <h2 className="text-title text-bold text-center mt-xl-35">The Teams Behind</h2>
+          <h2 className="text-title text-bold text-center mt-7 mt-xl-35">The Teams Behind</h2>
 
           <div className="row mt-6 mt-lg-15">
-            <div className="offset-lg-1 col-lg-5"></div>
+            <div className="offset-lg-1 col-lg-5">
+              <Image src={logo_mantra} />
+            </div>
 
-            <div className="col-md-5">
-              <p className="text-main">
+            <div className="col-lg-5 mt-6 mt-lg-0">
+              <h3 className="text-lead text-bold">MANTRA DAO</h3>
+              <p className="text-main mt-5">
                 MANTRA DAO is a community-governed DeFi ecosystem focusing on cross-chain DeFi
                 products. MANTRA DAO has built a suite of DeFi services including a multi-asset
                 staking platform, money market lending protocol, gamified rewards pool, and token
@@ -55,9 +60,9 @@ export default function About() {
                 Chain in the near future.
               </p>
 
-              <div className="mt-5">
+              <div className="mt-5 mt-lg-7">
                 <a
-                  className="btn btn-primary bnt-sm"
+                  className="btn btn-primary btn-sm d-block d-sm-inline-block"
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.mantradao.com/"
@@ -68,11 +73,14 @@ export default function About() {
             </div>
           </div>
 
-          <div className="row mt-6 mt-lg-15">
-            <div className="offset-md-1 col-md-5 order-md-2"></div>
+          <div className="row mt-8 mt-lg-15">
+            <div className="col-lg-5 order-lg-2 d-lg-flex justify-content-end">
+              <Image src={logo_limechain} />
+            </div>
 
-            <div className="col-md-5 order-md-1">
-              <p className="text-main">
+            <div className="offset-lg-1 col-lg-5 order-lg-1 mt-6 mt-lg-0">
+              <h3 className="text-lead text-bold">LimeChain</h3>
+              <p className="text-main mt-5">
                 Having started as a small boutique solutions company in 2017, LimeChain has since
                 become one of the top Blockchain companies in the world, a Web3 innovator counting
                 Fortune 500 companies and well-known Web3 startups and builders among its clients.
@@ -84,12 +92,12 @@ export default function About() {
                 MantraDAO, Celo, IMVU, P&G, Raiffeisen Bank, and others.
               </p>
 
-              <div className="mt-5">
+              <div className="mt-5 mt-lg-7">
                 <a
-                  className="btn btn-primary bnt-sm"
+                  className="btn btn-primary btn-sm d-block d-sm-inline-block "
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.mantradao.com/"
+                  href="https://limechain.tech/"
                 >
                   Visit website
                 </a>
