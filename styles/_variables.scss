@@ -10,7 +10,7 @@ $steel: #c8ccd4;
 $pale: #eceff2;
 $snow: #f9fbfd;
 
-$primary: #2D46FC;
+$primary: #2f18e5;
 $secondary: $grey;
 $success: #23C581;
 $danger: #FD2B5E;
@@ -255,6 +255,8 @@ $btn-transition: color 0.15s linear, background-color 0.15s linear, border-color
 $btn-disabled-opacity: 0.5;
 
 $btn-primary-color: $white;
+$btn-primary-outline-color: $white;
+$btn-primary-outline-border-hover: #7391FF;
 
 // Forms
 $input-color: #7F89A7;
