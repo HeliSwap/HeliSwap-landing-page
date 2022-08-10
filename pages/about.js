@@ -29,9 +29,9 @@ export default function About() {
 
               <p className="text-main mt-5 mt-lg-5">
                 The HeliSwap team is formed by engineers and experts in the field coming from MANTRA
-                and LimeChain. We are the first DEX to receive a grant from the HBAR Foundation to
-                build within the Hedera ecosystem. Our devs have been one of the core contributors
-                for Hedera on the protocol level.
+                and LimeChain. We received a grant from the HBAR Foundation to build within the
+                Hedera ecosystem. Our devs have been one of the core contributors for Hedera on the
+                protocol level.
               </p>
 
               <p className="text-main text-bold mt-5 mt-lg-5">
@@ -86,10 +86,11 @@ export default function About() {
                 portfolio includes dApp and DeFi development, token and NFT minting, smart contract
                 development and Web3 consulting. The blockchain development teams have worked on
                 over 150 projects and partnered with notable Web3 players like Hedera Hashgraph and
-                Polkadot. The company has a team of Hedera core developers that have the HTS
-                Service, Scheduled Transactions, Worked on the Hedera Smart Contract Service and
-                introduced the HTS Precompile enabling developers to interact with HTS through smart
-                contracts.
+                Polkadot. The company has a team of Hedera core developers that have worked on the
+                implementation of the HTS Service, Scheduled Transactions, Smart Contract Service
+                2.0, introduced the HTS Precompile enabling developers to interact with HTS through
+                smart contracts. The team is actively developing the Hedera tooling ecosystem such
+                as hedera local node, hethers and the JSON RPC Relay project.
               </p>
 
               <div className="mt-5 mt-lg-7">
