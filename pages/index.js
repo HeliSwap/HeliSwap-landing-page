@@ -96,7 +96,8 @@ export default function Home() {
 
               <p className="text-main mt-5 mt-lg-5">
                 The first DEX on the Hedera network supporting swaps between HTS, ERC20s and HBAR.
-                Completely trustless and permissionless. Built on the Hedera Smart Contract Service.
+                Completely trustless and permissionless. Built on the Hedera Smart Contract Service
+                with the aim to become the defacto AMM being a public good within the network.
               </p>
 
               <div className="d-md-flex align-items-center mt-7">
