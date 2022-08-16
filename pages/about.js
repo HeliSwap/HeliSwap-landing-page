@@ -74,11 +74,11 @@ export default function About() {
           </div>
 
           <div className="row mt-8 mt-lg-15">
-            <div className="col-lg-5 order-lg-2 d-lg-flex justify-content-end">
+            <div className="col-lg-5 d-lg-flex justify-content-end">
               <Image src={logo_limechain} />
             </div>
 
-            <div className="offset-lg-1 col-lg-5 order-lg-1 mt-6 mt-lg-0">
+            <div className="offset-lg-1 col-lg-5 mt-6 mt-lg-0">
               <h3 className="text-lead text-bold">LimeChain</h3>
               <p className="text-main mt-5">
                 LimeChain has been working with both start-ups and established enterprises since
