@@ -1,14 +1,15 @@
 import { useState } from 'react';
 import axios from 'axios';
 import Head from 'next/head';
-import Link from 'next/link';
 import Image from 'next/image';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import logo_glass from '../public/logo-glass.png';
 import logo_hbar from '../public/logo-hbar.svg';
+import logo_halborn from '../public/logo-halborn.svg';
 
+import reward from '../public/icons/reward.svg';
 import lightning from '../public/icons/lightning.svg';
 import consensus from '../public/icons/consensus.svg';
 import users from '../public/icons/users.svg';
@@ -115,10 +116,13 @@ export default function Home() {
               </div>
 
               <div className="d-flex align-items-center mt-6 mt-md-20">
-                <p className="text-small me-3 mb-3">Supported by</p>{' '}
-                <a target="_blank" rel="noreferrer" href="https://www.hbarfoundation.org/">
-                  <Image className="d-block" src={logo_hbar} alt="" />
-                </a>
+                <Image src={logo_halborn} />
+                <div className="d-flex align-items-center ms-5">
+                  <p className="text-small me-3 mb-3">Supported by</p>{' '}
+                  <a target="_blank" rel="noreferrer" href="https://www.hbarfoundation.org/">
+                    <Image className="d-block" src={logo_hbar} alt="" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -126,10 +130,25 @@ export default function Home() {
           <h2 className="text-title text-bold text-center mt-10 mt-xl-35">About HeliSwap</h2>
           <div className="row align-items-center mt-10 mt-xl-20">
             <div className="offset-lg-1 col-lg-5 text-center">
-              <Image src={lightning} alt="" />
+              <Image src={reward} alt="" />
             </div>
 
             <div className="col-lg-5 mt-6 mt-lg-0">
+              <h3 className="text-lead text-bold">Reward your community</h3>
+              <p className="text-main mt-5">
+                HeliSwap supports customized liquidity mining incentives program for ecosystem
+                projects. It allows for projects to launch liquidity mining programs and airdrops
+                for their community.
+              </p>
+            </div>
+          </div>
+
+          <div className="row align-items-center mt-10 mt-xl-20">
+            <div className="order-lg-2 col-lg-5 text-center">
+              <Image src={lightning} alt="" />
+            </div>
+
+            <div className="offset-lg-1 order-lg-1 col-lg-5 mt-6 mt-lg-0">
               <h3 className="text-lead text-bold">Lightning fast</h3>
               <p className="text-main mt-5">
                 With HeliSwap we are bringing in a lightning fast, affordable and already
@@ -138,22 +157,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="row align-items-center mt-10 mt-xl-20">
-            <div className="col-lg-5 text-center order-lg-2">
-              <Image src={consensus} alt="" />
-            </div>
 
-            <div className="offset-lg-1 col-lg-5 order-lg-1 mt-6 mt-lg-0">
-              <h3 className="text-lead text-bold">State-of-the-art Proof of Stake</h3>
-              <p className="text-main mt-5">
-                Having built the platform on Hedera Hashgraph, we’ve been able to take advantage of
-                the network’s state-of-the-art Proof of Stake consensus algorithm, which supports
-                high throughput, low fees and real-time transaction confirmation. On top of that,
-                the energy-efficient algorithm also makes HeliSwap one of the most environmentally
-                friendly crypto trading platforms out there.
-              </p>
-            </div>
-          </div>
           <div className="row align-items-center mt-10 mt-xl-20">
             <div className="offset-lg-1 col-lg-5 text-center">
               <Image src={users} alt="" />
@@ -170,6 +174,24 @@ export default function Home() {
               </p>
             </div>
           </div>
+
+          <div className="row align-items-center mt-10 mt-xl-20">
+            <div className="order-lg-2 col-lg-5 text-center ">
+              <Image src={consensus} alt="" />
+            </div>
+
+            <div className="offset-lg-1 order-lg-1 col-lg-5 mt-6 mt-lg-0">
+              <h3 className="text-lead text-bold">State-of-the-art Proof of Stake</h3>
+              <p className="text-main mt-5">
+                Having built the platform on Hedera Hashgraph, we’ve been able to take advantage of
+                the network’s state-of-the-art Proof of Stake consensus algorithm, which supports
+                high throughput, low fees and real-time transaction confirmation. On top of that,
+                the energy-efficient algorithm also makes HeliSwap one of the most environmentally
+                friendly crypto trading platforms out there.
+              </p>
+            </div>
+          </div>
+
           <div className="pt-10 mt-xl-20">
             <h2 className="text-mega text-bold text-center">
               HELI Fast, HELI Green, HELI Affordable
