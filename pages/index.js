@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import axios from 'axios';
 import Head from 'next/head';
-import Link from 'next/link';
 import Image from 'next/image';
 
-import LogoLink from '../components/Logo';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import logo_glass from '../public/logo-glass.png';
+import logo_hbar from '../public/logo-hbar.svg';
+import logo_halborn from '../public/logo-halborn.png';
 
+import reward from '../public/icons/reward.svg';
 import lightning from '../public/icons/lightning.svg';
 import consensus from '../public/icons/consensus.svg';
 import users from '../public/icons/users.svg';
@@ -78,7 +81,7 @@ export default function Home() {
 
       <div className="container-homepage-wrapper">
         <div className="container py-5 py-lg-6">
-          <LogoLink />
+          <Header />
 
           <div className="row align-items-center mt-6 mt-lg-15">
             <div className="d-lg-none text-center">
@@ -94,47 +97,70 @@ export default function Home() {
 
               <p className="text-main mt-5 mt-lg-5">
                 The first DEX on the Hedera network supporting swaps between HTS, ERC20s and HBAR.
-                Completely trustless and permissionless. Built on the Hedera Smart Contract Service.
+                Open-sourced, completely trustless and permissionless. Built on the Hedera Smart
+                Contract Service with the aim to become the defacto AMM being a public good within
+                the network.
               </p>
 
-              <div className="mt-7">
-                <a href="#subscribe" className="btn btn-sm btn-primary">
+              <div className="d-md-flex align-items-center mt-7">
+                <a href="#subscribe" className="btn btn-outline-primary d-block d-sm-inline-block">
                   Subscribe
                 </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://app.heliswap.io/"
+                  className="btn btn-primary ms-sm-4 mt-3 mt-sm-0 d-block d-sm-inline-block"
+                >
+                  Launch App
+                </a>
+              </div>
+
+              <div className="d-flex align-items-center mt-6 mt-md-20">
+                <a
+                  href="https://github.com/LimeChain/HeliSwap-contracts/blob/main/audits/Halborn-august-2022.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image width={96} height={85} src={logo_halborn} />
+                </a>
+                <div className="d-flex align-items-center ms-5">
+                  <p className="text-small me-3 mb-3">Supported by</p>{' '}
+                  <a target="_blank" rel="noreferrer" href="https://www.hbarfoundation.org/">
+                    <Image className="d-block" src={logo_hbar} alt="" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
           <h2 className="text-title text-bold text-center mt-10 mt-xl-35">About HeliSwap</h2>
-
           <div className="row align-items-center mt-10 mt-xl-20">
             <div className="offset-lg-1 col-lg-5 text-center">
-              <Image src={lightning} alt="" />
+              <Image src={reward} alt="" />
             </div>
 
             <div className="col-lg-5 mt-6 mt-lg-0">
-              <h3 className="text-lead text-bold">Lightning fast</h3>
+              <h3 className="text-lead text-bold">Reward your community</h3>
               <p className="text-main mt-5">
-                With HeliSwap we are bringing in a lightning fast, affordable and already
-                battle-tested AMM to the DeFi space. HeliSwap has some of the lowest fees in the
-                industry.
+                HeliSwap supports customized liquidity mining incentives program for ecosystem
+                projects. It allows for projects to launch liquidity mining programs and airdrops
+                for their community.
               </p>
             </div>
           </div>
 
           <div className="row align-items-center mt-10 mt-xl-20">
-            <div className="col-lg-5 text-center order-lg-2">
-              <Image src={consensus} alt="" />
+            <div className="order-lg-2 col-lg-5 text-center">
+              <Image src={lightning} alt="" />
             </div>
 
-            <div className="offset-lg-1 col-lg-5 order-lg-1 mt-6 mt-lg-0">
-              <h3 className="text-lead text-bold">State-of-the-art Proof of Stake</h3>
+            <div className="offset-lg-1 order-lg-1 col-lg-5 mt-6 mt-lg-0">
+              <h3 className="text-lead text-bold">Lightning fast</h3>
               <p className="text-main mt-5">
-                Having built the platform on Hedera Hashgraph, we’ve been able to take advantage of
-                the network’s state-of-the-art Proof of Stake consensus algorithm, which supports
-                high throughput, low fees and real-time transaction confirmation. On top of that,
-                the energy-efficient algorithm also makes HeliSwap one of the most environmentally
-                friendly crypto trading platforms out there.
+                With HeliSwap we are bringing in a lightning fast, affordable and already
+                battle-tested AMM to the DeFi space. HeliSwap has some of the lowest fees in the
+                industry.
               </p>
             </div>
           </div>
@@ -156,12 +182,28 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="row align-items-center mt-10 mt-xl-20">
+            <div className="order-lg-2 col-lg-5 text-center ">
+              <Image src={consensus} alt="" />
+            </div>
+
+            <div className="offset-lg-1 order-lg-1 col-lg-5 mt-6 mt-lg-0">
+              <h3 className="text-lead text-bold">State-of-the-art Proof of Stake</h3>
+              <p className="text-main mt-5">
+                Having built the platform on Hedera Hashgraph, we’ve been able to take advantage of
+                the network’s state-of-the-art Proof of Stake consensus algorithm, which supports
+                high throughput, low fees and real-time transaction confirmation. On top of that,
+                the energy-efficient algorithm also makes HeliSwap one of the most environmentally
+                friendly crypto trading platforms out there.
+              </p>
+            </div>
+          </div>
+
           <div className="pt-10 mt-xl-20">
             <h2 className="text-mega text-bold text-center">
               HELI Fast, HELI Green, HELI Affordable
             </h2>
           </div>
-
           <div id="subscribe" className="mt-10 mt-xl-20">
             <div className="row">
               <div className="offset-lg-3 col-lg-6">
@@ -173,7 +215,7 @@ export default function Home() {
                 ) : (
                   <>
                     <p className="text-lead text-center text-bold mt-5 mt-lg-5">
-                      Get notified when we launch
+                      Subscribe to our latest news
                     </p>
 
                     <div className="mt-4">
@@ -211,34 +253,7 @@ export default function Home() {
             </div>
           </div>
 
-          <hr className="my-6 mt-lg-15" />
-
-          <div className="d-flex justify-content-between align-items-center">
-            <div className="d-flex">
-              <a
-                href="https://twitter.com/heliswap_dex"
-                target="_blank"
-                rel="noreferrer"
-                className="icon-social is-twitter"
-              ></a>
-              <a
-                href="https://t.me/heliswap"
-                target="_blank"
-                rel="noreferrer"
-                className="icon-social is-telegram ms-4"
-              ></a>
-            </div>
-
-            <div className="text-small">
-              <Link href="/terms">
-                <a className="link">Terms of use</a>
-              </Link>
-              {/* <span className="mx-2">|</span>
-                <Link href="privacy">
-                  <a className="link">Privacy Policy</a>
-                </Link> */}
-            </div>
-          </div>
+          <Footer />
         </div>
       </div>
     </div>

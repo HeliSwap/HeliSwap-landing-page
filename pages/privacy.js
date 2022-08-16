@@ -10,7 +10,7 @@ export default function Privacy() {
       </Head>
 
       <div className="container py-5 py-lg-6">
-        <Header pageTitle="Privacy" />
+        <Header />
 
         <h1 className="text-hero text-bold mt-6 mt-lg-15">Privacy</h1>
         <p className="text-small text-bold mt-5">Last Modified: November 13, 2019</p>

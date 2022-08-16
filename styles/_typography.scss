@@ -25,6 +25,7 @@
 
 // Links
 .link {
+  font-size: 14px;
   color: $white;
   text-decoration: none;
   transition: color 0.15s linear;
@@ -80,6 +81,15 @@
   padding: 4px 8px;
   color: $white;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+
+  transition: color 0.15s linear;
+
+  &:hover {
+    color: #f62ed6;
+    text-decoration: none;
+  }
 }
 
 .cursor-pointer {
