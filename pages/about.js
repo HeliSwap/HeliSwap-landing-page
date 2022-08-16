@@ -89,8 +89,9 @@ export default function About() {
                 Polkadot. The company has a team of Hedera core developers that have worked on the
                 implementation of the HTS Service, Scheduled Transactions, Smart Contract Service
                 2.0, introduced the HTS Precompile enabling developers to interact with HTS through
-                smart contracts. The team is actively developing the Hedera tooling ecosystem such
-                as hedera local node, hethers and the JSON RPC Relay project.
+                smart contracts. The team is still actively developing the Hedera ecosystem both on
+                the network level and the developer tooling projects such as hedera local node,
+                hethers and the JSON RPC Relay project.
               </p>
 
               <div className="mt-5 mt-lg-7">
