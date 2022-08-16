@@ -117,7 +117,13 @@ export default function Home() {
               </div>
 
               <div className="d-flex align-items-center mt-6 mt-md-20">
-                <Image width={96} height={85} src={logo_halborn} />
+                <a
+                  href="https://github.com/LimeChain/HeliSwap-contracts/blob/main/audits/Halborn-august-2022.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image width={96} height={85} src={logo_halborn} />
+                </a>
                 <div className="d-flex align-items-center ms-5">
                   <p className="text-small me-3 mb-3">Supported by</p>{' '}
                   <a target="_blank" rel="noreferrer" href="https://www.hbarfoundation.org/">
