@@ -49,15 +49,14 @@ export default function About() {
             </div>
 
             <div className="col-lg-5 mt-6 mt-lg-0">
-              <h3 className="text-lead text-bold">MANTRA DAO</h3>
+              <h3 className="text-lead text-bold">MANTRA</h3>
               <p className="text-main mt-5">
-                MANTRA DAO is a community-governed DeFi ecosystem focusing on cross-chain DeFi
-                products. MANTRA DAO has built a suite of DeFi services including a multi-asset
-                staking platform, money market lending protocol, gamified rewards pool, and token
-                issuance launchpad. The suite is natively built on Ethereum, with cross-chain
-                products currently on Binance Smart Chain, Polygon, Solana, Terra, and are currently
-                working on launching these services on HECO, Polkadot and our own native MANTRA
-                Chain in the near future.
+                MANTRA is a community-governed DeFi ecosystem focusing on cross-chain DeFi products.
+                MANTRA has built a suite of DeFi services including a multi-asset staking platform,
+                money market lending protocol, gamified rewards pool, and token issuance launchpad.
+                The suite is natively built on Ethereum, with cross-chain products currently on
+                Binance Smart Chain, Polygon, Solana, Terra, and are currently working on launching
+                these services on HECO, Polkadot and our own native MANTRA Chain in the near future.
               </p>
 
               <div className="mt-5 mt-lg-7">
