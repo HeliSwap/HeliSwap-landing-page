@@ -11,14 +11,22 @@ body {
 }
 
 body {
-  background-image: url('../public/bg-body-01.svg'), url('../public/bg-body-02.svg');
+  background-image: url('../public/bg-body-01.png'), url('../public/bg-body-02.png');
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 100%, 100% 100%;
+  background-position: 0 5%, 100% 2%;
 }
 
 .container-homepage-wrapper {
   @include media-breakpoint-up(lg) {
     background-image: url('../public/logo-glass.png');
+    background-position: 100% 80px;
+    background-repeat: no-repeat;
+  }
+}
+
+.container-about-wrapper {
+  @include media-breakpoint-up(lg) {
+    background-image: url('../public/bg-about.png');
     background-position: 100% 80px;
     background-repeat: no-repeat;
   }

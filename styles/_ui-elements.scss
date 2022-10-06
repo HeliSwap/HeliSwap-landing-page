@@ -32,11 +32,22 @@
   &.is-telegram {
     background-image: url('../public/icons/icon-telegram.svg');
   }
+
+  &.is-github {
+    background-image: url('../public/icons/icon-github.svg');
+  }
+
+  &.is-medium {
+    background-image: url('../public/icons/icon-medium.svg');
+  }
+
+  &.is-youtube {
+    background-image: url('../public/icons/icon-youtube.svg');
+  }
 }
 
 .container-header-page-title {
   height: 44px;
-  border-left: 1px solid $white;
   padding-left: 32px;
   margin-left: 32px;
   line-height: 44px;
@@ -49,4 +60,11 @@
   li {
     margin-top: 24px;
   }
+}
+
+.separator-menu {
+  width: 2px;
+  height: 36px;
+  background-color: #7979a3;
+  margin: 0 32px;
 }

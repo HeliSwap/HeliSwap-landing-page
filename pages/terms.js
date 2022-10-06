@@ -9,7 +9,7 @@ export default function Terms() {
       </Head>
 
       <div className="container py-5 py-lg-6">
-        <Header pageTitle="Legal" />
+        <Header />
 
         <h1 className="text-hero text-bold mt-6 mt-lg-15">Terms of Use</h1>
         <p className="text-small text-bold mt-5">Last Modified: June 28, 2022</p>

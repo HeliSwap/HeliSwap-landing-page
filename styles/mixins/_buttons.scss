@@ -106,15 +106,15 @@
   $color-hover: color-contrast($color),
   $active-background: $color,
   $active-border: $color,
-  $active-color: color-contrast($active-background)
+  $active-color: color-contrast($active-background),
+  $text-color: $btn-primary-outline-color
 ) {
-  color: $color;
+  color: $text-color;
   border-color: $color;
 
   &:hover {
-    color: $color-hover;
-    background-color: $active-background;
-    border-color: $active-border;
+    color: $text-color;
+    border-color: $btn-primary-outline-border-hover;
   }
 
   .btn-check:focus + &,
@@ -127,8 +127,7 @@
   &:active,
   &.active,
   &.dropdown-toggle.show {
-    color: $active-color;
-    background-color: $active-background;
+    color: $text-color;
     border-color: $active-border;
 
     &:focus {
