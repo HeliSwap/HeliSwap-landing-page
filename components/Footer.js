@@ -24,6 +24,24 @@ export default function Footer() {
             rel="noreferrer"
             className="icon-social is-github ms-4"
           ></a>
+          <a
+            href="https://discord.gg/wVrkMwBKsm"
+            target="_blank"
+            rel="noreferrer"
+            className="icon-social is-discord ms-4"
+          ></a>
+          <a
+            href="https://medium.com/@heliswap"
+            target="_blank"
+            rel="noreferrer"
+            className="icon-social is-medium ms-4"
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCPYjXlmxIXYmKJ72ajplrfg"
+            target="_blank"
+            rel="noreferrer"
+            className="icon-social is-youtube ms-4"
+          ></a>
         </div>
         <MenuFooter />
       </div>
