@@ -51,12 +51,13 @@ export default function About() {
             <div className="col-lg-5 mt-6 mt-lg-0">
               <h3 className="text-lead text-bold">MANTRA</h3>
               <p className="text-main mt-5">
-                MANTRA is a community-governed DeFi ecosystem focusing on cross-chain DeFi products.
-                MANTRA has built a suite of DeFi services including a multi-asset staking platform,
-                money market lending protocol, gamified rewards pool, and token issuance launchpad.
-                The suite is natively built on Ethereum, with cross-chain products currently on
-                Binance Smart Chain, Polygon, Solana, Terra, and are currently working on launching
-                these services on HECO, Polkadot and our own native MANTRA Chain in the near future.
+                MANTRA is a first of its kind, vertically-integrated and regulatory compliant
+                blockchain ecosystem. The MANTRA OMniverse encompasses the DAO; MANTRA Nodes: a
+                blockchain infrastructure-as-a-service business that includes retail staking,
+                institutional delegation, node management, and white-label validator operations;
+                MANTRA Chain: a protocol for regulated assets for the Cosmos ecosystem; and MANTRA
+                Finance: a globally-regulated DeFi platform that brings the speed and transparency
+                of DeFi to the world of traditional finance.
               </p>
 
               <div className="mt-5 mt-lg-7">
