@@ -4,8 +4,8 @@ export default function Footer() {
   return (
     <>
       <hr className="my-6 mt-lg-15" />
-      <div className="d-flex justify-content-between align-items-center">
-        <div className="d-flex">
+      <div className="d-md-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-center justify-content-md-start mb-5 mb-md-0">
           <a
             href="https://twitter.com/heliswap_dex"
             target="_blank"
