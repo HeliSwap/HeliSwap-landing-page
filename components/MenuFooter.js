@@ -10,16 +10,20 @@ export default function Menu() {
       title: 'Terms of use',
       url: '/terms',
     },
-    // {
-    //   title: 'Privacy Policy',
-    //   url: '/privacy',
-    // },
   ];
 
+  const currentYear = new Date(Date.now()).getFullYear();
+
   return (
-    <ul className="d-flex">
+    <ul className="d-flex justify-content-center justify-content-md-end">
+      <li className="ms-4">
+        <span>{currentYear} HELISWAP LABS INC</span>
+      </li>
+      <li className="mx-3">
+        <span>|</span>
+      </li>
       {menuContent?.map((item, index) => (
-        <li className="mx-4" key={index}>
+        <li className="me-4" key={index}>
           <Link href={item.url}>
             <a className={`link py-3 ${route === item.url ? 'is-active' : null}`}>{item.title}</a>
           </Link>
