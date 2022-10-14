@@ -27,7 +27,7 @@ body {
 .container-about-wrapper {
   @include media-breakpoint-up(lg) {
     background-image: url('../public/bg-body-03.png');
-    background-position: 100% 80px;
+    background-position: 80% 80px;
     background-repeat: no-repeat;
   }
 }
