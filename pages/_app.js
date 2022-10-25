@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-S2NXPBLWM2`}
+        src={`https://www.googletagmanager.com/gtag/js?id=GTM-MNVGJFT`}
       />
       <Script
         id="gtag-init"
@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-S2NXPBLWM2', {
+            gtag('config', 'GTM-MNVGJFT', {
               page_path: window.location.pathname,
             });
           `,
